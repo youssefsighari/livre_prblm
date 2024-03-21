@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello LivreController!{% endblock %}
+
+{% block body %}
+
+<table>
+<tr>
+<th>titre</th>
+<th>ISBN</th>
+<th>Slug</th>
+<th>auteur</th>
+<th>resume</th>
+<th>editeur</th>
+</tr>
+
+{% for i in livre %}
+<tr>
+<td>{{i.titre}}</td>
+<td>{{i.ISBN}}</td>
+<td>{{i.slug}}</td>
+<td>{{i.auteur}}</td>
+<td>{{i.resume}}</td>
+<td>{{i.editeur}}</td>
+</tr>
+    
+{% endfor %}
+
+
+</table>
+
+
+
+
+
+{% endblock %}
